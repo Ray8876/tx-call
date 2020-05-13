@@ -92,7 +92,7 @@ public class OneForOne {
 
             @Override
             public void onReject(String userId) {
-                MessageToFlutter.events.success("通话被拒绝啦" + userId);
+                MessageToFlutter.events.success(userId + "拒绝通话" );
             }
 
             @Override

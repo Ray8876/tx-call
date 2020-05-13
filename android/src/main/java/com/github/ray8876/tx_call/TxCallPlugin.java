@@ -125,12 +125,6 @@ public class TxCallPlugin implements FlutterPlugin, MethodCallHandler {
         result.success("方法名写错了？");
         break;
     }
-
-    if (call.method.equals("getPlatformVersion")) {
-      result.success("Android " + android.os.Build.VERSION.RELEASE);
-    } else {
-      result.notImplemented();
-    }
   }
 
   @Override
